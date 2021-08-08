@@ -54,7 +54,6 @@
                     android:layout_marginRight="30dp"
                     android:background="@drawable/circle_background"
                     android:gravity="center"
-                    android:onClick="Edit_Profile"
                     android:padding="15dp"
                     android:src="@drawable/ic_edit"
                     tools:ignore="NotSibling" />
