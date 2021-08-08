@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "585727920130",
+    "project_id": "datex-c4224",
+    "storage_bucket": "datex-c4224.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585727920130:android:16860683cf2d1373a7bf1b",
+        "android_client_info": {
+          "package_name": "com.example.datex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585727920130-if5qbi7akrgg0f7cr56ge9qbf3039s86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAifALSqGC6JSFk51L5q3ITSWhvMQc_nqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585727920130-if5qbi7akrgg0f7cr56ge9qbf3039s86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

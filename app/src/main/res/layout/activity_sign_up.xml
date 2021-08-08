@@ -1,0 +1,121 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_pink"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="36dp"
+        android:textColor="@color/theme_navy"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="8dp"
+        android:textColorHint="@color/grey"
+        android:drawableTint="@color/grey"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/ic_phone_24"
+        android:drawablePadding="8dp"
+        android:textColorHint="@color/grey"
+        android:drawableTint="@color/grey"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="8dp"
+        android:textColorHint="@color/grey"
+        android:drawableTint="@color/grey"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Re-Enter your Password"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="8dp"
+        android:textColorHint="@color/grey"
+        android:drawableTint="@color/grey"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background"
+        app:backgroundTint="@color/theme_navy"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:id="@+id/signup_id"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_grey"
+            android:text="Already have an Account?"
+            android:textSize="12dp"/>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Log In"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:textColor="#DA0037"
+                android:id="@+id/login_textview"
+                android:background="?android:attr/selectableItemBackground"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

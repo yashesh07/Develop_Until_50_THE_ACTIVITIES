@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:orientation="vertical"
+        android:background="@color/theme_pink">
+
+        <ImageView
+            android:id="@+id/idIVProfile"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/idTVProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="3dp"
+                android:text="Profile Name"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="24dp"/>
+            <TextView
+                android:id="@+id/idTVProfileTracks"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="3dp"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/idTVProfileDuration"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="3dp"
+                android:text="Age"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/idTVProfileDescription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="3dp"
+                android:text="Bio"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

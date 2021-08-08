@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Message"
+    android:orientation="vertical"
+    android:background="@color/theme_cream">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_pink">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Messages"
+                android:textColor="@color/theme_pink"
+                android:background="@color/theme_navy"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="36dp"
+                android:layout_weight="1"
+                android:padding="16dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_numbers"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:background="@color/theme_pink">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_verified_user_24"
+                android:layout_weight="1"
+                app:tint="@color/theme_grey"
+                android:id="@+id/user_profile"
+                android:background="?android:attr/selectableItemBackground"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_emoji_people_24"
+                android:layout_weight="1"
+                app:tint="@color/theme_grey"
+                android:id="@+id/user_dating"
+                android:background="?android:attr/selectableItemBackground"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_message_24"
+                android:layout_weight="1"
+                app:tint="@color/theme_navy"
+                android:id="@+id/user_message"
+                android:background="?android:attr/selectableItemBackground"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

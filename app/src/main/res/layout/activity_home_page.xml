@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/theme_cream">
+
+    <com.daprlabs.cardstack.SwipeFrameLayout
+        xmlns:swipedeck="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.daprlabs.cardstack.SwipeDeck
+            android:id="@+id/swipe_deck"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:padding="20dp"
+            swipedeck:card_spacing="10dp"
+            swipedeck:max_visible="3"
+            swipedeck:render_above="true"
+            swipedeck:rotation_degrees="15" />
+
+    </com.daprlabs.cardstack.SwipeFrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:background="@color/theme_pink">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_verified_user_24"
+                android:layout_weight="1"
+                app:tint="@color/theme_grey"
+                android:id="@+id/user_profile"
+                android:background="?android:attr/selectableItemBackground"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_emoji_people_24"
+                android:layout_weight="1"
+                app:tint="@color/theme_navy"
+                android:id="@+id/user_dating"
+                android:background="?android:attr/selectableItemBackground"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_message_24"
+                android:layout_weight="1"
+                app:tint="@color/theme_grey"
+                android:id="@+id/user_message"
+                android:background="?android:attr/selectableItemBackground"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
